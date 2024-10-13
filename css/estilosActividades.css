@@ -242,23 +242,23 @@ h2 {
     position: relative;
     width: 100vw;
     max-width: 800px;
-    height: 500px;
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin: 40px auto;
 }
 
+.carousel-images img {
+    width: 100%;
+    height: auto; /* Deja que la altura sea automática según el ancho */
+}
+
+
 .carousel-images {
     display: flex; 
     transition: transform 0.5s ease; 
 }
 
-.carousel-images img {
-    min-width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
 .prev, .next {
     position: absolute;
@@ -279,6 +279,13 @@ h2 {
 .next {
     right: 10px;
 }
+
+@media (max-width: 768px) {
+    .carousel {
+        height: 40vh; /* Ajusta la altura para pantallas pequeñas */
+    }
+}
+
 
 .prev:hover, .next:hover {
     background-color: rgba(255, 255, 255, 1);
