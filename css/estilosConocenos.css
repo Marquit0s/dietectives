@@ -28,6 +28,7 @@ header {
     font-family: 'Arial', sans-serif;
     transition: transform 0.3s ease, background-position 0.5s ease; 
     background-size: 200% 200%;
+   margin-left: 25%;
 }
 
 .company-name::before {
@@ -340,10 +341,18 @@ div.faq
 .team-member {
     text-align: center;
     border: 2px solid #BFAE90;
-    padding: 15px;
+    padding: 0px;
     border-radius: 10px;
     background-color: #f9f9f9;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+    padding: 10%; 
+    max-width: 80%;  
+    overflow: hidden;
 }
 
 .team-member:hover {
@@ -352,11 +361,12 @@ div.faq
 }
 
 .member-photo {
-    width: 150px;
-    height: 150px;
+    width: 120%;
+    height: 400%;
     object-fit: cover;
     border-radius: 50%;
     margin-bottom: 10px;
+    display: block;
 }
 
 .team-member h3 {
