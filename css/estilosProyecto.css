@@ -29,6 +29,8 @@ header {
     transition: transform 0.3s ease, background-position 0.5s ease; 
     background-size: 200% 200%;
     margin-left: 25%;
+    position: absolute;
+    z-index: 2;
 }
 
 .company-name::before {
@@ -266,4 +268,44 @@ footer {
 
 #btn-top:hover {
     background-color: #c6b5a1;
+}
+
+@media (max-width: 768px) {
+    .company-name {
+        left: 20%;
+        font-size: 30px; /* Reducir tamaño de fuente en pantallas pequeñas */
+        margin: 0; /* Ajustar márgenes */
+        text-align: center;
+    }
+
+    .menu-icon {
+        padding: 20px; /* Reducir padding para icono de menú */
+    }
+
+    .nav-logo {
+        width: 100px; /* Ajustar tamaño del logo */
+    }
+
+    .container {
+        flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+        align-items: center; /* Centrar elementos */
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr; /* Cambiar a una sola columna */
+    }
+
+    .member-photo {
+        width: 100%; /* Ajustar el ancho de la foto del miembro */
+        height: auto; /* Mantener la proporción */
+    }
+
+    .social-icons img {
+        width: 30px; /* Ajustar tamaño de iconos sociales */
+    }
+    .logo_grande {
+        margin-top: 3.5%;
+        width: 20%; /* Reduce image size for mobile devices */
+        top: 10px; /* Adjust position */
+    }
 }
