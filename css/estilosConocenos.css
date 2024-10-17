@@ -28,9 +28,8 @@ header {
     font-family: 'Arial', sans-serif;
     transition: transform 0.3s ease, background-position 0.5s ease; 
     background-size: 200% 200%;
-    margin-left: 25%;
-    position: absolute;
-    z-index: 2;
+   margin-left: 25%;
+   z-index: 2;
 }
 
 .company-name::before {
@@ -390,10 +389,9 @@ div.faq
 
 @media (max-width: 768px) {
     .company-name {
-        left: 20%;
-        font-size: 30px; /* Reducir tamaño de fuente en pantallas pequeñas */
+        margin-left: 30%;
+        font-size: 40px; /* Reducir tamaño de fuente en pantallas pequeñas */
         margin: 0; /* Ajustar márgenes */
-        text-align: center;
     }
 
     .menu-icon {
@@ -422,7 +420,7 @@ div.faq
         width: 30px; /* Ajustar tamaño de iconos sociales */
     }
     .logo_grande {
-        margin-top: 3.5%;
+        margin-top: 5%;
         width: 20%; /* Reduce image size for mobile devices */
         top: 10px; /* Adjust position */
     }

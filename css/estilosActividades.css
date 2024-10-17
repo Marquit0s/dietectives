@@ -29,8 +29,6 @@ header {
     transition: transform 0.3s ease, background-position 0.5s ease; 
     background-size: 200% 200%;
     margin-left: 25%;
-    position: absolute;
-    z-index: 2;
 }
 
 .company-name::before {
@@ -223,8 +221,6 @@ h2 {
         top: 10px; /* Adjust position */
     }
 }
-
-
 @media (max-width: 480px) {
     nav ul li {
         margin-bottom: 8px;
