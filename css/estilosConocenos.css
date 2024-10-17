@@ -28,9 +28,9 @@ header {
     font-family: 'Arial', sans-serif;
     transition: transform 0.3s ease, background-position 0.5s ease; 
     background-size: 200% 200%;
-   margin-left: 25%;
-   position: absolute;
-   z-index: 2;
+    margin-left: 25%;
+    position: absolute;
+    z-index: 2;
 }
 
 .company-name::before {

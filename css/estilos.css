@@ -20,17 +20,16 @@ header {
     -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent; 
     text-align: center;
-    margin: 0 auto;
+    margin: 0; /* Elimina los márgenes fijos */
     padding: 10px 0;
-    margin-right: 700px;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-family: 'Arial', sans-serif;
-    transition: transform 0.3s ease, background-position 0.5s ease; 
+    transition: transform 0.3s ease, background-position 0.5s ease;
     background-size: 200% 200%;
-    margin-left: 25%;
-    position: absolute;
+    position: relative; 
     z-index: 2;
+
 }
 
 .company-name::before {
@@ -275,10 +274,10 @@ h2 {
 
 @media (max-width: 768px) {
     .company-name {
-        left: 20%;
+  
         font-size: 30px; /* Reducir tamaño de fuente en pantallas pequeñas */
-        margin: 0; /* Ajustar márgenes */
-        text-align: center;
+    margin-right: 30%;
+     
     }
 
     .menu-icon {
