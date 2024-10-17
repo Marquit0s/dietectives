@@ -276,7 +276,7 @@ h2 {
         left: 20%;
         font-size: 30px; /* Reducir tamaño de fuente en pantallas pequeñas */
         margin: 0; /* Ajustar márgenes */
-        text-align: center;
+        margin-right: 34%;
     }
 
     .menu-icon {

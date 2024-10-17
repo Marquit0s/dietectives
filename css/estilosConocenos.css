@@ -389,9 +389,10 @@ div.faq
 
 @media (max-width: 768px) {
     .company-name {
-        margin-left: 30%;
-        font-size: 40px; /* Reducir tamaño de fuente en pantallas pequeñas */
+        left: 20%;
+        font-size: 30px; /* Reducir tamaño de fuente en pantallas pequeñas */
         margin: 0; /* Ajustar márgenes */
+        margin-right: 34%;
     }
 
     .menu-icon {
@@ -420,8 +421,58 @@ div.faq
         width: 30px; /* Ajustar tamaño de iconos sociales */
     }
     .logo_grande {
-        margin-top: 5%;
+        margin-top: 3.5%;
         width: 20%; /* Reduce image size for mobile devices */
         top: 10px; /* Adjust position */
     }
+}
+
+@media (max-width: 480px) {
+    .company-name {
+        font-size: 18px;
+    }
+
+    nav ul li {
+        margin-bottom: 8px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    section {
+        margin: 10px 5px;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+.icon-small {
+    width: 30px;
+}
+
+#mensaje-bienvenida{
+    text-align: center;
+    font-size: 40px;
 }
