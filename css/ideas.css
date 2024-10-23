@@ -1,0 +1,447 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #88b28a, #d8c4a9);
+    padding: 10px 20px;
+    position: relative;
+}
+
+.company-name {
+    font-size: 70px;
+    font-weight: bold;
+    background: linear-gradient(135deg, #ff5733, #ffbd33);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px 0;
+    margin-right: 700px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Arial', sans-serif;
+    transition: transform 0.3s ease, background-position 0.5s ease; 
+    background-size: 200% 200%;
+    margin-left: 25%;
+}
+
+.company-name::before {
+    content: attr(data-text); 
+    position: absolute;
+    left: 2px; 
+    top: 2px; 
+    color: rgba(0, 0, 0, 0.3); 
+    z-index: -1; 
+}
+
+.company-name:hover {
+    transform: scale(1.1);
+    animation: animateGradient 5s ease infinite;
+}
+
+@keyframes animateGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.main-image {
+    position: relative;
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+.image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-img {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    justify-content: flex-end;
+}
+
+.overlay h2 {
+    font-size: 1.8em;
+    margin: 0;
+}
+
+.overlay p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    padding: 60px;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background-color: #BFAE90;
+    width: 250px;
+    height: 100vh;
+    transition: left 0.3s ease-in-out;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(135deg, #88b28a, #d8c4a9);
+    
+}
+
+nav.active {
+    left: 0;
+}
+
+.nav-logo-container {
+    margin: 20px 0;
+
+}
+
+.nav-logo {
+    width: 170px;
+    height: auto;
+}
+
+.nav-logo:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 80%;
+}
+
+nav ul li {
+    margin-bottom: 20px;
+    text-align: center;
+    
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px 0;
+}
+
+nav ul li a:hover {
+    color: #2C7352;
+    text-decoration: underline;
+}
+
+.logo-small {
+    width: 30px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+.instagram-logo-container {
+    margin-top: -5%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.instagram-logo {
+    width: 40px;
+    height: auto;
+    transition: transform 0.3s ease; 
+}
+
+.instagram-logo:hover {
+    transform: scale(1.1);
+}
+
+.logo_grande {
+    position: absolute;
+    right: 0px;
+    top: 16px;
+    width: 240px;
+    padding: 0px;
+    margin-right: 12px;
+    transition: transform 0.3s;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    border-bottom: 2px solid #BFAE90;
+}
+
+a {
+    color: #2C7352;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #BFAE90;
+    text-decoration: none;
+}
+
+.logo_grande:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+#btn-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    background-color: #88b28a;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    display: none;
+}
+
+#btn-top:hover {
+    background-color: #c6b5a1;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: linear-gradient(135deg, #88b28a, #d8c4a9);
+    color: #2C7352;
+}
+
+
+h2 {
+    color: #2C7352;
+    border-bottom: 2px solid #BFAE90;
+}
+
+@media (max-width: 768px) {
+    .company-name {
+        left: 20%;
+        font-size: 30px; /* Reducir tamaño de fuente en pantallas pequeñas */
+        margin: 0; /* Ajustar márgenes */
+        margin-right: 34%;
+    }
+
+    .menu-icon {
+        padding: 20px; /* Reducir padding para icono de menú */
+    }
+
+    .nav-logo {
+        width: 100px; /* Ajustar tamaño del logo */
+    }
+
+    .container {
+        flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+        align-items: center; /* Centrar elementos */
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr; /* Cambiar a una sola columna */
+    }
+
+    .member-photo {
+        width: 100%; /* Ajustar el ancho de la foto del miembro */
+        height: auto; /* Mantener la proporción */
+    }
+
+    .social-icons img {
+        width: 30px; /* Ajustar tamaño de iconos sociales */
+    }
+    .logo_grande {
+        margin-top: 3.5%;
+        width: 20%; /* Reduce image size for mobile devices */
+        top: 10px; /* Adjust position */
+    }
+}
+
+@media (max-width: 480px) {
+    .company-name {
+        font-size: 18px;
+    }
+
+    nav ul li {
+        margin-bottom: 8px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    section {
+        margin: 10px 5px;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+.icon-small {
+    width: 30px;
+}
+
+#mensaje-bienvenida{
+    text-align: center;
+    font-size: 40px;
+}
+
+
+
+/* Styling for each section (person and their recipe) */
+.section {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Ajusta el ancho según sea necesario */
+    margin: 0 auto;  /* Esto centra el contenedor general horizontalmente */
+    margin-top: 2%;
+}
+
+.persona {
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px; /* Cambiar de 100px a 30px o menos */
+    padding: 15px; /* Espacio interno */
+    border: 2px solid #2C7352; /* Color y grosor del borde */
+    border-radius: 10px; /* Esquinas redondeadas, si deseas */
+    background-color: #fff; /* Color de fondo, si deseas */
+}
+
+
+
+.persona img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 15px;
+    
+}
+
+.persona img:hover{
+    transform: scale(1.1);
+}
+
+.persona-description {
+    text-align: center; /* Para centrar el texto de la descripción */
+}
+
+
+.consejos p {
+    font-size: 1em;
+    margin-top: 10px;
+    text-align: center; /* Centra el texto del consejo */
+}
+
+/* Styling for ingredients and preparation sections */
+ul, ol {
+    margin: 0;          /* Elimina el margen */
+    padding: 0;         /* Elimina el relleno */
+    list-style-position: inside; /* Mueve los puntos/números dentro de la lista */
+}
+
+/* For better alignment of list items */
+ul li, ol li {
+    text-indent: -1.2em; /* Mueve el texto un poco hacia la izquierda */
+    padding-left: 1.5em; /* Espacio entre el número/punto y el texto */
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+
+/* Styling for consejos paragraph */
+.consejos p {
+    font-size: 1em;
+    color: #2C7352; /* Color verde especificado */
+    margin-top: 10px;
+    text-align: center; /* Centra el texto del consejo */
+}
+
+
+.receta h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.ingredientes ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.preparacion ol {
+    list-style-type: decimal;
+    margin-left: 20px;
+}
+
+
