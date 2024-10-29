@@ -14,7 +14,7 @@ header {
 }
 
 .company-name {
-    font-size: 70px;
+    font-size: 100px;
     font-weight: bold;
     background: linear-gradient(135deg, #ff5733, #ffbd33);
     -webkit-background-clip: text; 
@@ -29,6 +29,7 @@ header {
     transition: transform 0.3s ease, background-position 0.5s ease; 
     background-size: 200% 200%;
     margin-left: 25%;
+    font-family: 'Super Kinds', cursive;
 }
 
 .company-name::before {
@@ -77,33 +78,6 @@ header {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-    justify-content: flex-end;
-}
-
-.overlay h2 {
-    font-size: 1.8em;
-    margin: 0;
-}
-
-.overlay p {
-    font-size: 1.2em;
-    margin-top: 10px;
-}
-
 
 .menu-icon {
     font-size: 24px;

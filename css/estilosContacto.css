@@ -14,7 +14,7 @@ header {
 }
 
 .company-name {
-    font-size: 70px;
+    font-size: 100px;
     font-weight: bold;
     background: linear-gradient(135deg, #ff5733, #ffbd33);
     -webkit-background-clip: text; 
@@ -29,6 +29,7 @@ header {
     transition: transform 0.3s ease, background-position 0.5s ease; 
     background-size: 200% 200%;
     margin-left: 25%;
+    font-family: 'Super Kinds', cursive;
 }
 
 .company-name::before {

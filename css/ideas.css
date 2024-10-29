@@ -14,7 +14,7 @@ header {
 }
 
 .company-name {
-    font-size: 70px;
+    font-size: 100px;
     font-weight: bold;
     background: linear-gradient(135deg, #ff5733, #ffbd33);
     -webkit-background-clip: text; 
@@ -29,6 +29,7 @@ header {
     transition: transform 0.3s ease, background-position 0.5s ease; 
     background-size: 200% 200%;
     margin-left: 25%;
+    font-family: 'Super Kinds', cursive;
 }
 
 .company-name::before {
@@ -55,12 +56,6 @@ header {
     100% {
         background-position: 0% 50%;
     }
-}
-
-.main-image {
-    position: relative;
-    margin: 20px 0;
-    overflow: hidden;
 }
 
 .image-container {
@@ -354,7 +349,17 @@ h2 {
     font-size: 40px;
 }
 
+#comida {
+    width: 300px; /* Ajusta el ancho según lo necesites */
+    height: 300px; /* Ajusta la altura según lo necesites */
+    object-fit: cover; /* Asegura que las imágenes llenen el espacio sin distorsionarse */
+    border-radius: 10px; /* Opcional: agrega bordes redondeados */
+    overflow: hidden; /* Asegura que nada se desborde del contenedor */
+}
 
+#comida:hover {
+    transform: scale(1.05); /* Aumenta el tamaño al pasar el ratón */
+}
 
 /* Styling for each section (person and their recipe) */
 .section {
